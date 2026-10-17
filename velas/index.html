@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Velas Florales · Catálogo</title>
-<meta name="description" content="Catálogo de velas artesanales hechas a mano.">
-<meta property="og:title" content="Velas Florales · Catálogo">
+<title>VELARE · Catálogo de velas</title>
+<meta name="description" content="VELARE · Velas artesanales hechas a mano con amor.">
+<meta property="og:title" content="VELARE · Catálogo de velas">
 <meta property="og:description" content="Velas artesanales hechas a mano para regalar y decorar.">
 <meta name="theme-color" content="#2f5d34">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,11 @@ img{max-width:100%;display:block}
 .top{background:var(--green);color:var(--on);padding-top:calc(env(safe-area-inset-top) + 34px);padding-bottom:40px;border-radius:0 0 32px 32px;position:relative;overflow:hidden}
 .top::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.12),transparent 70%)}
 .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.8}
-.top h1{font-family:var(--script);font-weight:400;font-size:clamp(52px,13vw,84px);line-height:1;margin:6px 0 4px}
+.top h1{font-family:var(--display);font-weight:400;font-size:clamp(46px,12vw,72px);letter-spacing:.22em;line-height:1.1;margin:8px 0 6px}
+.top .star{display:flex;align-items:center;gap:10px;max-width:220px;margin-bottom:14px;opacity:.8}
+.top .star i{flex:1;height:1px;background:currentColor}
+.top .eyebrow{font-family:var(--script);font-size:28px;letter-spacing:0;text-transform:none;opacity:.9}
+.ig{color:var(--green);font-weight:600;text-decoration:none}
 .top p{margin:0;opacity:.88;max-width:40ch}
 
 /* Lista */
@@ -91,15 +95,16 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding-bottom:calc(2
 
 <div id="lista">
   <header class="top pad"><div class="wrap">
-    <div class="eyebrow" id="lema"></div>
     <h1 id="marca"></h1>
-    <p>Toca una vela para ver sus fotos, detalles y precio.</p>
+    <div class="star" aria-hidden="true"><i></i>✦<i></i></div>
+    <div class="eyebrow" id="lema"></div>
+    <p style="margin-top:10px">Toca una vela para ver sus fotos, detalles y precio.</p>
   </div></header>
   <main class="pad"><div class="wrap">
     <div class="count" id="count"></div>
     <div class="grid" id="grid"></div>
   </div></main>
-  <footer class="pad">Cada vela se hace a mano y puede variar ligeramente de la foto.</footer>
+  <footer class="pad">Cada vela se hace a mano y puede variar ligeramente de la foto.<br><a class="ig" id="ig" href="#" target="_blank" rel="noopener"></a></footer>
 </div>
 
 <div id="detalle" class="detail" hidden>
@@ -131,6 +136,7 @@ const C = window.CATALOGO, $ = id => document.getElementById(id);
 const money = n => "$" + Number(n).toLocaleString("es-MX");
 document.title = C.marca + " · Catálogo";
 $("marca").textContent = C.marca; $("lema").textContent = C.lema;
+if(C.instagram){ $("ig").textContent = "Instagram @" + C.instagram; $("ig").href = "https://instagram.com/" + C.instagram; } else $("ig").hidden = true;
 $("count").textContent = C.velas.length + (C.velas.length === 1 ? " modelo disponible" : " modelos disponibles");
 
 $("grid").innerHTML = C.velas.map(v => `

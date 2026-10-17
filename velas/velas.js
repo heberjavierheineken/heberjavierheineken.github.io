@@ -1,7 +1,8 @@
 // Lista de velas del catálogo. Para agregar una vela nueva, copia un bloque { ... } y cambia sus datos.
 window.CATALOGO = {
-  marca: "Velas Florales",
-  lema: "Hechas a mano para regalar y decorar",
+  marca: "VELARE",
+  instagram: "velare.candle",
+  lema: "Hecho a mano con amor",
   whatsapp: "", // ejemplo: "523411234567" (con 52 y lada, sin espacios)
   velas: [
     {
