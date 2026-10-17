@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Velas Florales · Catálogo</title>
+<meta name="description" content="Catálogo de velas artesanales hechas a mano.">
+<meta property="og:title" content="Velas Florales · Catálogo">
+<meta property="og:description" content="Velas artesanales hechas a mano para regalar y decorar.">
+<meta name="theme-color" content="#2f5d34">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f4f7f1; --card:#ffffff; --ink:#1f3322; --muted:#5f7560; --line:#dbe5d5;
+  --green:#2f5d34; --green-d:#1f4424; --leaf:#dde9d4; --pink:#e2707e; --on:#f3f7ef;
+  --script:"Great Vibes","Snell Roundhand",cursive;
+  --display:"Italiana","Didot",Georgia,serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.pad{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+.wrap{max-width:1040px;margin:0 auto}
+
+/* Encabezado */
+.top{background:var(--green);color:var(--on);padding-top:calc(env(safe-area-inset-top) + 34px);padding-bottom:40px;border-radius:0 0 32px 32px;position:relative;overflow:hidden}
+.top::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.12),transparent 70%)}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.8}
+.top h1{font-family:var(--script);font-weight:400;font-size:clamp(52px,13vw,84px);line-height:1;margin:6px 0 4px}
+.top p{margin:0;opacity:.88;max-width:40ch}
+
+/* Lista */
+.count{color:var(--muted);font-size:14px;margin:26px 0 14px}
+.grid{display:grid;grid-template-columns:1fr;gap:22px;padding-bottom:48px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border-radius:22px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;box-shadow:0 14px 30px -22px rgba(31,68,36,.55);transition:transform .2s}
+.card:active{transform:scale(.985)}
+.card:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.card .ph{aspect-ratio:4/5;background:var(--leaf)}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .tx{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px}
+.card h2{font-family:var(--script);font-weight:400;font-size:42px;line-height:1.05;margin:0;color:var(--green)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.price{font-family:var(--display);font-size:30px;color:var(--ink)}
+.more{font-size:14px;font-weight:600;color:var(--green);display:flex;align-items:center;gap:6px}
+
+/* Detalle */
+.detail{padding-bottom:110px}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding-top:calc(env(safe-area-inset-top) + 10px);padding-bottom:10px}
+.back{appearance:none;border:0;background:var(--card);color:var(--green);font:600 15px var(--body);padding:10px 16px 10px 12px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;cursor:pointer;box-shadow:0 4px 14px -8px rgba(0,0,0,.3)}
+.back:focus-visible{outline:3px solid var(--pink)}
+.dgrid{display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:820px){.dgrid{grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}}
+.gal{min-width:0}
+.slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:22px;scrollbar-width:none;background:var(--card)}
+.slides::-webkit-scrollbar{display:none}
+.slides img{flex:0 0 100%;width:100%;scroll-snap-align:center;object-fit:contain;aspect-ratio:2/3;background:var(--card)}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:12px}
+.dots button{width:9px;height:9px;border-radius:50%;border:0;padding:0;background:var(--line);cursor:pointer}
+.dots button[aria-current="true"]{background:var(--green);width:24px;border-radius:9px}
+.info{display:flex;flex-direction:column;gap:16px;min-width:0}
+.info h2{font-family:var(--script);font-weight:400;font-size:clamp(50px,12vw,64px);line-height:1;margin:0;color:var(--green)}
+.sub{font-family:var(--display);letter-spacing:.16em;text-transform:uppercase;font-size:15px;color:var(--muted);margin-top:-6px}
+.info .desc{margin:0;max-width:60ch}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;border-top:1px solid var(--line)}
+dt,dd{margin:0;padding:11px 0;border-bottom:1px solid var(--line)}
+dt{color:var(--muted);font-size:14px;padding-right:18px}
+dd{font-weight:500}
+.ideal{background:var(--leaf);border-radius:14px;padding:12px 16px;font-size:15px}
+.ideal b{color:var(--green-d)}
+.buy{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--card);border-top:1px solid var(--line);padding-top:12px;padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+.buy .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.buy .price{font-size:34px}
+.btn{appearance:none;border:0;border-radius:999px;background:var(--green);color:#fff;font:600 16px var(--body);padding:14px 22px;display:inline-flex;align-items:center;gap:8px;text-decoration:none;cursor:pointer}
+.btn.alt{background:var(--leaf);color:var(--green-d)}
+.btn:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+footer{color:var(--muted);font-size:13px;text-align:center;padding-bottom:calc(28px + env(safe-area-inset-bottom))}
+[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div id="lista">
+  <header class="top pad"><div class="wrap">
+    <div class="eyebrow" id="lema"></div>
+    <h1 id="marca"></h1>
+    <p>Toca una vela para ver sus fotos, detalles y precio.</p>
+  </div></header>
+  <main class="pad"><div class="wrap">
+    <div class="count" id="count"></div>
+    <div class="grid" id="grid"></div>
+  </div></main>
+  <footer class="pad">Cada vela se hace a mano y puede variar ligeramente de la foto.</footer>
+</div>
+
+<div id="detalle" class="detail" hidden>
+  <div class="bar pad"><div class="wrap"><button class="back" id="back" type="button">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>Catálogo</button></div></div>
+  <main class="pad"><div class="wrap dgrid">
+    <div class="gal"><div class="slides" id="slides"></div><div class="dots" id="dots"></div></div>
+    <div class="info">
+      <h2 id="dNombre"></h2>
+      <div class="sub" id="dSub"></div>
+      <p class="desc" id="dDesc"></p>
+      <dl id="dDet"></dl>
+      <div class="ideal" id="dIdeal"></div>
+    </div>
+  </div></main>
+  <div class="buy pad"><div class="wrap">
+    <div class="price" id="dPrecio"></div>
+    <div style="display:flex;gap:8px">
+      <button class="btn alt" id="share" type="button">Compartir</button>
+      <a class="btn" id="wa" target="_blank" rel="noopener" hidden>Pedir por WhatsApp</a>
+    </div>
+  </div></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="velas.js"></script>
+<script>
+const C = window.CATALOGO, $ = id => document.getElementById(id);
+const money = n => "$" + Number(n).toLocaleString("es-MX");
+document.title = C.marca + " · Catálogo";
+$("marca").textContent = C.marca; $("lema").textContent = C.lema;
+$("count").textContent = C.velas.length + (C.velas.length === 1 ? " modelo disponible" : " modelos disponibles");
+
+$("grid").innerHTML = C.velas.map(v => `
+  <a class="card" href="#${v.id}">
+    <div class="ph"><img src="${v.portada}" alt="${v.nombre}" loading="lazy"></div>
+    <div class="tx">
+      <h2>${v.nombre}</h2>
+      <p>${v.corta}</p>
+      <div class="row"><span class="price">${money(v.precio)}</span>
+        <span class="more">Ver detalles <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></span></div>
+    </div>
+  </a>`).join("");
+
+let listScroll = 0, fromList = false;
+function show(){
+  const id = location.hash.slice(1), v = C.velas.find(x => x.id === id);
+  if(!v){ $("detalle").hidden = true; $("lista").hidden = false; window.scrollTo(0, listScroll); document.title = C.marca + " · Catálogo"; return; }
+  if(!$("lista").hidden){ listScroll = window.scrollY; fromList = true; }
+  $("lista").hidden = true; $("detalle").hidden = false; window.scrollTo(0,0);
+  document.title = v.nombre + " · " + C.marca;
+  $("dNombre").textContent = v.nombre; $("dSub").textContent = v.subtitulo || "";
+  $("dDesc").textContent = v.descripcion; $("dPrecio").textContent = money(v.precio);
+  $("dDet").innerHTML = (v.detalles||[]).map(([k,val]) => `<dt>${k}</dt><dd>${val}</dd>`).join("");
+  $("dIdeal").hidden = !v.ideal; $("dIdeal").innerHTML = v.ideal ? `<b>Ideal para:</b> ${v.ideal}` : "";
+  $("slides").innerHTML = v.fotos.map(f => `<img src="${f.src}" alt="${f.alt}">`).join("");
+  $("slides").scrollLeft = 0;
+  $("dots").innerHTML = v.fotos.length > 1 ? v.fotos.map((_,i) => `<button type="button" aria-label="Foto ${i+1}" aria-current="${i===0}"></button>`).join("") : "";
+  [...$("dots").children].forEach((b,i) => b.onclick = () => $("slides").scrollTo({left:i*$("slides").clientWidth,behavior:"smooth"}));
+  const wa = $("wa");
+  if(C.whatsapp){ wa.hidden = false; wa.href = "https://wa.me/" + C.whatsapp + "?text=" + encodeURIComponent("Hola, me interesa la vela " + v.nombre + " (" + money(v.precio) + "). " + location.href); }
+  else wa.hidden = true;
+}
+$("slides").addEventListener("scroll", () => {
+  const i = Math.round($("slides").scrollLeft / $("slides").clientWidth);
+  [...$("dots").children].forEach((b,j) => b.setAttribute("aria-current", j===i));
+}, {passive:true});
+$("back").onclick = () => { if(fromList){ fromList = false; history.back(); } else location.hash = ""; };
+function toast(t){ const el=$("toast"); el.textContent=t; el.classList.add("on"); setTimeout(()=>el.classList.remove("on"),1800); }
+$("share").onclick = async () => {
+  const url = location.href, title = document.title;
+  try{ if(navigator.share){ await navigator.share({title,url}); return; } }catch(e){ return; }
+  try{ await navigator.clipboard.writeText(url); toast("Link copiado"); }catch(e){ toast(url); }
+};
+window.addEventListener("hashchange", show); show();
+</script>
+</body>
+</html>
