@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayuda Desempleo Jalisco Sur | Retiro por desempleo Afore</title>
+<meta name="description" content="Te ayudamos a tramitar tu retiro parcial por desempleo de tu Afore. Revisión gratis por WhatsApp. Guadalajara, Ciudad Guzmán, Sayula, Autlán y todo el sur de Jalisco.">
+<meta property="og:title" content="¿Te quedaste sin trabajo? Tu Afore te puede apoyar">
+<meta property="og:description" content="Revisamos gratis si puedes retirar tu ayuda por desempleo. Escríbenos por WhatsApp.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#0b3d6e; --azul2:#145da0; --verde:#1fa855; --verdeOsc:#128c45;
+    --amarillo:#ffc93c; --fondo:#f4f7fb; --texto:#1c2733; --gris:#5b6b7b; --blanco:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',system-ui,sans-serif;background:var(--fondo);color:var(--texto);line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+
+  header.hero{background:linear-gradient(150deg,var(--azul) 0%,var(--azul2) 100%);color:#fff;padding:28px 0 56px;position:relative;overflow:hidden}
+  header.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:rgba(255,201,60,.18)}
+  .marca{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;letter-spacing:.3px}
+  .marca .ico{width:38px;height:38px;border-radius:10px;background:var(--amarillo);color:var(--azul);display:grid;place-items:center;font-size:1.3rem}
+  .hero h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin:34px 0 14px;font-weight:800;max-width:720px}
+  .hero h1 span{color:var(--amarillo)}
+  .hero p.sub{font-size:1.08rem;opacity:.93;max-width:600px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 26px}
+  .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;font-size:.88rem}
+
+  .btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--verde);color:#fff;text-decoration:none;font-weight:700;font-size:1.08rem;padding:16px 26px;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .15s,background .15s}
+  .btn-wa:hover{background:var(--verdeOsc);transform:translateY(-2px)}
+  .btn-wa svg{width:24px;height:24px;fill:#fff}
+  .nota{font-size:.85rem;opacity:.85;margin-top:10px}
+
+  section{padding:52px 0}
+  h2{font-size:clamp(1.45rem,4.5vw,2rem);color:var(--azul);margin-bottom:8px;font-weight:800}
+  .lead{color:var(--gris);margin-bottom:26px;max-width:640px}
+
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 4px 18px rgba(11,61,110,.08)}
+  .card .n{width:40px;height:40px;border-radius:50%;background:var(--azul);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:12px}
+  .card h3{font-size:1.08rem;margin-bottom:6px;color:var(--azul)}
+  .card p{color:var(--gris);font-size:.95rem}
+
+  .req{list-style:none;display:grid;gap:12px}
+  .req li{background:#fff;border-radius:14px;padding:16px 18px 16px 52px;position:relative;box-shadow:0 3px 12px rgba(11,61,110,.06)}
+  .req li::before{content:"✓";position:absolute;left:16px;top:14px;width:26px;height:26px;border-radius:50%;background:var(--verde);color:#fff;display:grid;place-items:center;font-weight:800;font-size:.9rem}
+  .aviso{margin-top:16px;font-size:.9rem;color:var(--gris)}
+
+  .ventajas{background:#fff}
+  .v{display:flex;gap:14px;align-items:flex-start}
+  .v .e{font-size:1.7rem;line-height:1}
+  .v h3{font-size:1.02rem;color:var(--azul)}
+  .v p{color:var(--gris);font-size:.93rem}
+
+  .ciudades{display:flex;flex-wrap:wrap;gap:10px}
+  .ciudades span{background:#fff;border:2px solid #dbe5f0;color:var(--azul);font-weight:600;padding:8px 14px;border-radius:12px;font-size:.95rem}
+  .ciudades span.top{background:var(--azul);color:#fff;border-color:var(--azul)}
+
+  details{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:0 3px 12px rgba(11,61,110,.06)}
+  summary{font-weight:600;cursor:pointer;color:var(--azul);list-style:none;display:flex;justify-content:space-between;gap:12px}
+  summary::after{content:"+";font-weight:800;font-size:1.2rem}
+  details[open] summary::after{content:"–"}
+  details p{margin-top:10px;color:var(--gris);font-size:.95rem}
+
+  .cta-final{background:linear-gradient(150deg,var(--azul) 0%,var(--azul2) 100%);color:#fff;text-align:center;border-radius:22px;padding:40px 22px;margin:0 18px}
+  .cta-final h2{color:#fff}
+  .cta-final p{opacity:.92;margin:6px auto 22px;max-width:520px}
+
+  footer{text-align:center;color:var(--gris);font-size:.82rem;padding:34px 18px 100px}
+
+  .flotante{position:fixed;right:16px;bottom:16px;width:62px;height:62px;border-radius:50%;background:var(--verde);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:10;animation:pulso 2.2s infinite}
+  .flotante svg{width:32px;height:32px;fill:#fff}
+  @keyframes pulso{0%{box-shadow:0 0 0 0 rgba(31,168,85,.55)}70%{box-shadow:0 0 0 16px rgba(31,168,85,0)}100%{box-shadow:0 0 0 0 rgba(31,168,85,0)}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="marca"><div class="ico">🤝</div>Ayuda Desempleo Jalisco Sur</div>
+    <h1>¿Te quedaste sin trabajo? <span>Tu Afore te puede apoyar.</span></h1>
+    <p class="sub">Te ayudamos a tramitar tu <strong>retiro parcial por desempleo</strong> de principio a fin. Tú no batallas con filas ni papeleo: nosotros lo hacemos contigo.</p>
+    <div class="chips">
+      <span class="chip">✅ Revisión gratis</span>
+      <span class="chip">📱 Todo por WhatsApp</span>
+      <span class="chip">📍 Atención en tu ciudad</span>
+    </div>
+    <a class="btn-wa js-wa" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.3.6 4.5 1.8 6.5L3 29l7.1-2c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.2 1.1 1.1-4.1-.3-.4a10.4 10.4 0 0 1-1.6-5.5C5.2 9.8 10 5.1 16 5.1s10.8 4.7 10.8 10.5S22 26.1 16 26.1zm5.9-7.8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+      Quiero saber si califico
+    </a>
+    <p class="nota">Respuesta el mismo día · Sin compromiso</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Así de fácil funciona</h2>
+    <p class="lead">En tres pasos sabes cuánto podrías recibir y empezamos tu trámite.</p>
+    <div class="grid">
+      <div class="card"><div class="n">1</div><h3>Nos escribes</h3><p>Mándanos un WhatsApp con tu nombre y tu ciudad. Te pedimos solo lo básico.</p></div>
+      <div class="card"><div class="n">2</div><h3>Revisamos gratis</h3><p>Checamos si cumples los requisitos y te explicamos claramente qué sigue.</p></div>
+      <div class="card"><div class="n">3</div><h3>Tramitamos contigo</h3><p>Te acompañamos en todo el proceso hasta que el dinero llegue a tu cuenta.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>¿Quién puede tramitarlo?</h2>
+    <p class="lead">Estos son los requisitos generales. Si tienes duda, mándanos mensaje y lo revisamos contigo.</p>
+    <ul class="req">
+      <li>Haber cotizado en el <strong>IMSS</strong> (trabajaste con prestaciones).</li>
+      <li>Llevar <strong>15 días o más</strong> sin trabajo formal para empezar tu trámite. Para que proceda, debes completar <strong>al menos 46 días</strong> sin trabajo formal.</li>
+      <li>Tener tu cuenta en una Afore con al menos <strong>3 años</strong> de antigüedad.</li>
+      <li><strong>No haber hecho</strong> este retiro en los últimos 5 años.</li>
+    </ul>
+    <p class="aviso">Cada caso es distinto: te confirmamos gratis si calificas antes de iniciar cualquier trámite.</p>
+  </div>
+</section>
+
+<section class="ventajas">
+  <div class="wrap">
+    <h2>¿Por qué con nosotros?</h2>
+    <p class="lead">Somos de aquí, del sur de Jalisco. Te atendemos personas reales, no un bot.</p>
+    <div class="grid">
+      <div class="v"><div class="e">⏱️</div><div><h3>Ahorras tiempo</h3><p>Nada de vueltas ni filas: casi todo se hace desde tu celular.</p></div></div>
+      <div class="v"><div class="e">🧾</div><div><h3>Sin errores</h3><p>Revisamos tus datos para que el trámite no se rechace.</p></div></div>
+      <div class="v"><div class="e">🤝</div><div><h3>Trato cercano</h3><p>Te explicamos todo con palabras claras y te damos seguimiento.</p></div></div>
+      <div class="v"><div class="e">🔒</div><div><h3>Tus datos seguros</h3><p>Usamos tu información solo para tu trámite.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Te atendemos en</h2>
+    <p class="lead">Y en los alrededores. Si no ves tu ciudad, escríbenos.</p>
+    <div class="ciudades">
+      <span class="top">Guadalajara</span><span class="top">Ciudad Guzmán</span>
+      <span>Tuxpan</span><span>Zapotiltic</span><span>Tecalitlán</span><span>Sayula</span>
+      <span>Techaluta</span><span>Autlán</span><span>El Grullo</span><span>Unión de Tula</span><span>Tapalpa</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Cuánto cuesta la revisión?</summary><p>La revisión es gratis. Primero te decimos si calificas y, si quieres que te ayudemos, te explicamos el costo del servicio antes de empezar.</p></details>
+    <details><summary>¿Puedo empezar si apenas me quedé sin trabajo?</summary><p>Sí. Desde los 15 días sin trabajo formal empezamos a preparar tu trámite, y para que proceda debes completar al menos 46 días sin trabajo formal. Así ganas tiempo y no esperas de más.</p></details>
+    <details><summary>¿Cuánto tiempo tarda?</summary><p>Depende de tu Afore y de tus documentos. Al revisar tu caso te damos un tiempo estimado.</p></details>
+    <details><summary>¿Qué documentos necesito?</summary><p>Normalmente tu INE, CURP, estado de cuenta bancario a tu nombre y tu número de seguridad social. Te confirmamos la lista exacta por WhatsApp.</p></details>
+    <details><summary>¿Afecta mi pensión?</summary><p>El retiro por desempleo usa una parte de tu ahorro. Te explicamos cómo te afecta en tu caso para que decidas con toda la información.</p></details>
+  </div>
+</section>
+
+<div class="cta-final">
+  <h2>Revisa hoy si puedes recibir tu apoyo</h2>
+  <p>Mándanos un mensaje. Te contestamos el mismo día y sin compromiso.</p>
+  <a class="btn-wa js-wa" href="#" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.3.6 4.5 1.8 6.5L3 29l7.1-2c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.2 1.1 1.1-4.1-.3-.4a10.4 10.4 0 0 1-1.6-5.5C5.2 9.8 10 5.1 16 5.1s10.8 4.7 10.8 10.5S22 26.1 16 26.1z"/></svg>
+    Escríbenos: <span class="js-num">33 2259 5300</span>
+  </a>
+</div>
+
+<footer>
+  Ayuda Desempleo Jalisco Sur · Gestoría independiente, no somos una Afore ni el IMSS.<br>
+  Síguenos en Facebook: Ayuda desempleo Jalisco Sur
+</footer>
+
+<a class="flotante js-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.3.6 4.5 1.8 6.5L3 29l7.1-2c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.2 1.1 1.1-4.1-.3-.4a10.4 10.4 0 0 1-1.6-5.5C5.2 9.8 10 5.1 16 5.1s10.8 4.7 10.8 10.5S22 26.1 16 26.1z"/></svg>
+</a>
+
+<script>
+  // Cada lona manda a su número: ?wa=2 = 33 2268 2222 ; sin parámetro = 33 2259 5300
+  var numeros = { "1": ["523322595300","33 2259 5300"], "2": ["523322682222","33 2268 2222"] };
+  var clave = "1";
+  try { var q = new URLSearchParams(location.search).get("wa"); if (numeros[q]) clave = q; } catch(e) {}
+  var n = numeros[clave];
+  var msg = "Hola, vi su página. Quiero saber si califico para el retiro por desempleo de mi Afore. Mi nombre es ____ y vivo en ____.";
+  var url = "https://wa.me/" + n[0] + "?text=" + encodeURIComponent(msg);
+  document.querySelectorAll(".js-wa").forEach(function(a){ a.href = url; });
+  document.querySelectorAll(".js-num").forEach(function(el){ el.textContent = n[1]; });
+</script>
+</body>
+</html>
