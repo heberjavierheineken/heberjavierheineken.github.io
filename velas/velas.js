@@ -101,6 +101,26 @@ window.CATALOGO = {
         { src: "img/cruz-floral-ficha.svg", alt: "Ficha de la vela Cruz Floral" },
         { src: "img/cruz-floral-foto.svg", alt: "Vela en forma de cruz con flores fucsia" }
       ]
+    },
+    {
+      id: "pinos-de-navidad",
+      nombre: "Pinos de Navidad",
+      subtitulo: "Arbolitos en tres tamaños",
+      precio: 35,
+      corta: "Arbolitos de pino en cera, perfectos para decorar tu mesa navideña.",
+      descripcion: "Arbolitos de Navidad hechos a mano en cera con textura de ramas de pino. Vienen en tres tonos —verde intenso, verde claro y blanco— y en diferentes tamaños, así que puedes armar tu propio bosquecito navideño. Cada uno tiene un acabado brillante que refleja la luz de las velas de alrededor.",
+      detalles: [
+        ["Colores", "Verde intenso, verde claro y blanco"],
+        ["Tamaños", "Chico, mediano y grande"],
+        ["Acabado", "Textura de ramas de pino, brillo natural"],
+        ["Temporada", "Edición navideña"]
+      ],
+      ideal: "Centro de mesa navideño, regalo de intercambio o decoración de temporada.",
+      portada: "img/pinos-navidad-portada.svg",
+      fotos: [
+        { src: "img/pinos-navidad-portada.svg", alt: "Tres arbolitos de Navidad de cera en verde y blanco" },
+        { src: "img/pinos-navidad-coleccion.svg", alt: "Colección completa de pinos navideños en distintos tamaños" }
+      ]
     }
   ]
 };
