@@ -178,6 +178,63 @@ window.CATALOGO = {
       fotos: [
         { src: "img/tabletas-aromaticas-foto.svg", alt: "Par de tabletas aromáticas de lavanda con etiqueta VELARE" }
       ]
+    },
+    {
+      id: "figuras-navidenas",
+      nombre: "Figuras Navideñas",
+      subtitulo: "Set de 3 piezas con charola",
+      precio: 190,
+      corta: "Set de pino, copo de nieve y cubo burbuja con hojuela de oro, en charola de concreto.",
+      descripcion: "Un set de tres velas navideñas sobre una charola ovalada de concreto blanco con cama de piedritas doradas: un pino con cascabel, un copo de nieve y un cubo burbuja con brillos dorados. Todas llevan hojuela de oro y se ven elegantes como centro de mesa o regalo premium.",
+      detalles: [
+        ["Piezas", "Pino, copo de nieve y cubo burbuja"],
+        ["Base", "Charola ovalada de concreto blanco"],
+        ["Acabado", "Hojuela de oro y cascabeles dorados"],
+        ["Temporada", "Edición navideña"]
+      ],
+      ideal: "Centro de mesa navideño, regalo premium, decoración de sala o chimenea.",
+      portada: "img/figuras-navidad-foto.svg",
+      fotos: [
+        { src: "img/figuras-navidad-foto.svg", alt: "Set de figuras navideñas con charola de concreto" }
+      ]
+    },
+    {
+      id: "cubo-corazon",
+      nombre: "Cubo Corazón",
+      subtitulo: "Con brillos dorados y cascabel",
+      precio: 80,
+      corta: "Vela en forma de cubo burbuja con glitter dorado y moño navideño.",
+      descripcion: "Una vela con forma de cubo hecha de burbujas redondas apiladas, bañada en glitter dorado que atrapa la luz. Viene decorada con un moño rojo de 'Feliz Navidad' y un cascabel dorado. Su forma moderna la hace diferente a las velas tradicionales y queda perfecta como pieza de decoración.",
+      detalles: [
+        ["Color", "Blanco marfil con glitter dorado"],
+        ["Forma", "Cubo de burbujas apiladas"],
+        ["Detalle", "Moño rojo navideño y cascabel dorado"],
+        ["Temporada", "Edición navideña"]
+      ],
+      ideal: "Centro de mesa, regalo de intercambio, decoración moderna navideña.",
+      portada: "img/cuadros-corazon-foto.svg",
+      fotos: [
+        { src: "img/cuadros-corazon-foto.svg", alt: "Par de velas cubo corazón con glitter dorado" }
+      ]
+    },
+    {
+      id: "copos-de-nieve",
+      nombre: "Copos de Nieve",
+      subtitulo: "Con hojuela de oro",
+      precio: 28,
+      corta: "Velas en forma de copo de nieve con detalles de hojuela de oro.",
+      descripcion: "Pequeñas velas con forma de copo de nieve, talladas en cera blanca con detalles de hojuela de oro en las puntas. Son compactas, bonitas y perfectas para repartir como detalle navideño o para armar un centro de mesa con varias. Se ven increíbles encendidas porque la llama resalta el dorado.",
+      detalles: [
+        ["Color", "Blanco con hojuela de oro"],
+        ["Forma", "Copo de nieve con seis puntas"],
+        ["Tamaño", "Compacto, ideal para agrupar"],
+        ["Temporada", "Edición navideña"]
+      ],
+      ideal: "Detalle para posada, recuerdo navideño, intercambio o centro de mesa.",
+      portada: "img/copos-navidad-foto.svg",
+      fotos: [
+        { src: "img/copos-navidad-foto.svg", alt: "Tres velas de copo de nieve con hojuela de oro" }
+      ]
     }
   ]
 };
