@@ -3,7 +3,7 @@ window.CATALOGO = {
   marca: "VELARE",
   instagram: "velare.candle",
   lema: "Hecho a mano con amor",
-  whatsapp: "", // ejemplo: "523411234567" (con 52 y lada, sin espacios)
+  whatsapp: "523322682222", // ejemplo: "523411234567" (con 52 y lada, sin espacios)
   velas: [
     {
       id: "ramo-de-rosas",
