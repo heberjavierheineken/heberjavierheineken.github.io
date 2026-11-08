@@ -235,6 +235,44 @@ window.CATALOGO = {
       fotos: [
         { src: "img/copos-navidad-foto.svg", alt: "Tres velas de copo de nieve con hojuela de oro" }
       ]
+    },
+    {
+      id: "caja-regalo-navidad",
+      nombre: "Caja Regalo Navideña",
+      subtitulo: "3 velas en caja kraft con ventana",
+      precio: 100,
+      corta: "Caja de regalo con pino, copo de nieve y reno, lista para entregar.",
+      descripcion: "Una caja kraft con ventana transparente que trae tres velas navideñas acomodadas sobre papel de seda blanco: un pino con hojuela de oro, un copo de nieve y un reno con moño rojo. Ya viene armada y decorada con una rama de pino, así que solo la entregas. Es el regalo perfecto para alguien que no sabe qué dar en Navidad.",
+      detalles: [
+        ["Contenido", "Pino, copo de nieve y reno"],
+        ["Empaque", "Caja kraft con ventana y papel de seda"],
+        ["Decoración", "Rama de pino con frutos rojos"],
+        ["Listo para", "Entregar como regalo sin envolver"]
+      ],
+      ideal: "Intercambio navideño, regalo para anfitriona, detalle corporativo o para quien tiene todo.",
+      portada: "img/caja-navidad-foto.svg",
+      fotos: [
+        { src: "img/caja-navidad-foto.svg", alt: "Caja kraft con tres velas navideñas y decoración de pino" }
+      ]
+    },
+    {
+      id: "bosque-navideno",
+      nombre: "Bosque Navideño",
+      subtitulo: "Set completo con charola y piedritas",
+      precio: 210,
+      corta: "Tres pinos, un reno y un pino blanco sobre charola de concreto con piedritas. Personaliza los colores.",
+      descripcion: "Un bosque navideño completo sobre una charola ovalada de concreto blanco con cama de piedritas decorativas: tres pinos en distintos tonos de verde, un reno con moño rojo y cascabel, y un pino blanco con cascabel dorado. La charola y las piedritas están incluidas. Los pinos y renos se pueden hacer en el color que prefieras — solo dinos cuál al hacer tu pedido.",
+      detalles: [
+        ["Piezas", "3 pinos, 1 reno y 1 pino blanco (5 velas)"],
+        ["Base", "Charola ovalada de concreto con piedritas incluidas"],
+        ["Personalización", "Pinos y renos disponibles en el color que desees"],
+        ["Acabado", "Cascabeles dorados y moño rojo"]
+      ],
+      ideal: "Centro de mesa navideño, decoración de sala, regalo premium o pieza para chimenea.",
+      portada: "img/set-bosque-foto.svg",
+      fotos: [
+        { src: "img/set-bosque-foto.svg", alt: "Bosque navideño con pinos, reno y charola de concreto" }
+      ]
     }
   ]
 };
