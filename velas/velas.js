@@ -121,6 +121,44 @@ window.CATALOGO = {
         { src: "img/pinos-navidad-portada.svg", alt: "Tres arbolitos de Navidad de cera en verde y blanco" },
         { src: "img/pinos-navidad-coleccion.svg", alt: "Colección completa de pinos navideños en distintos tamaños" }
       ]
+    },
+    {
+      id: "pino-con-cascabel",
+      nombre: "Pino con Cascabel",
+      subtitulo: "Arbolito plano con estrella dorada",
+      precio: 30,
+      corta: "Arbolito de Navidad en cera blanca con cascabel dorado en la punta.",
+      descripcion: "Un arbolito de Navidad en cera blanca con silueta plana y ramas en relieve. Lleva un cascabel dorado en la punta que funciona como estrella, y se sostiene de pie por su base recta. Es compacto, elegante y queda perfecto al lado de una rama de pino natural.",
+      detalles: [
+        ["Color", "Blanco marfil"],
+        ["Detalle", "Cascabel dorado en la punta"],
+        ["Forma", "Silueta plana con ramas en relieve"],
+        ["Temporada", "Edición navideña"]
+      ],
+      ideal: "Centro de mesa, chimenea, recuerdo navideño o regalo de intercambio.",
+      portada: "img/pino-navidad-foto.svg",
+      fotos: [
+        { src: "img/pino-navidad-foto.svg", alt: "Arbolito de Navidad en cera blanca con cascabel dorado" }
+      ]
+    },
+    {
+      id: "reno-navideno",
+      nombre: "Reno Navideño",
+      subtitulo: "Con moño y cascabel",
+      precio: 37,
+      corta: "Reno de cera blanca con moño rojo de 'Navidad' y cascabel dorado.",
+      descripcion: "Un reno de cera blanca con silueta recortada, astas grandes y un arco entre las patitas. Lleva un moño rojo con la palabra 'Navidad' y un cascabel dorado colgando del cuello. Es un detalle navideño que se ve bien solo o acompañado de los pinos de la colección.",
+      detalles: [
+        ["Color", "Blanco marfil"],
+        ["Detalle", "Moño rojo navideño y cascabel dorado"],
+        ["Forma", "Silueta de reno con astas"],
+        ["Temporada", "Edición navideña"]
+      ],
+      ideal: "Decoración navideña, regalo de intercambio o complemento del nacimiento.",
+      portada: "img/reno-navidad-foto.svg",
+      fotos: [
+        { src: "img/reno-navidad-foto.svg", alt: "Reno de cera blanca con moño rojo y cascabel dorado" }
+      ]
     }
   ]
 };
