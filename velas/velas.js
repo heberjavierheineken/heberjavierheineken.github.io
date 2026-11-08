@@ -159,6 +159,25 @@ window.CATALOGO = {
       fotos: [
         { src: "img/reno-navidad-foto.svg", alt: "Reno de cera blanca con moño rojo y cascabel dorado" }
       ]
+    },
+    {
+      id: "tabletas-aromaticas",
+      nombre: "Tabletas Aromáticas",
+      subtitulo: "Flores de lavanda en cera",
+      precio: 20,
+      corta: "Tabletas redondas de cera aromática con flores en relieve. Para cajones, clósets y más.",
+      descripcion: "Tabletas redondas de cera aromática decoradas con flores de lavanda en relieve. Se cuelgan con su cordón de yute en el clóset, se meten en cajones de ropa, en el carro, en el baño o donde quieras un aroma fresco y duradero. No necesitan encenderse: liberan fragancia de forma natural durante semanas. Vienen con etiqueta VELARE y listas para regalar.",
+      detalles: [
+        ["Aroma", "Lavanda"],
+        ["Color", "Blanco con flores lila"],
+        ["Presentación", "Tableta redonda con cordón de yute"],
+        ["Usos", "Cajones, clóset, carro, baño, maletas, zapatos"]
+      ],
+      ideal: "Detalle para despedidas, recuerdo para evento, regalo económico o para perfumar tu ropa.",
+      portada: "img/tabletas-aromaticas-foto.svg",
+      fotos: [
+        { src: "img/tabletas-aromaticas-foto.svg", alt: "Par de tabletas aromáticas de lavanda con etiqueta VELARE" }
+      ]
     }
   ]
 };
