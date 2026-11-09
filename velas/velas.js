@@ -294,6 +294,49 @@ window.CATALOGO = {
         { src: "img/lumiere-vainilla-portada.svg", alt: "Vela Lumière vainilla en vaso ahumado, vista lateral" },
         { src: "img/lumiere-vainilla-etiqueta.svg", alt: "Vela Lumière vainilla, detalle de etiqueta VELARE" }
       ]
+    },
+    {
+      id: "santal-33",
+      nombre: "Santal 33",
+      subtitulo: "Vela aromática en vaso artesanal",
+      precio: 250,
+      corta: "Vela aromática con esencia Santal 33 en vaso de vidrio soplado con piedras de colores y alambre dorado.",
+      descripcion: "La fragancia Santal 33 capturada en una vela artesanal que es también una pieza decorativa. El vaso está hecho de vidrio soplado a mano, decorado con piedras de colores y un entramado de alambre dorado que lo hace único — no hay dos iguales. Al encenderla, la esencia amaderada y envolvente del santal llena tu espacio con una presencia sofisticada. Viene en caja de regalo con moño, lista para sorprender. Y lo mejor: es rellenable. Cuando se termina, trae tu vaso y lo rellenamos con el aroma que prefieras a un precio muy accesible.",
+      detalles: [
+        ["Aroma", "Santal 33 (disponible en más aromas al rellenar)"],
+        ["Vaso", "Vidrio soplado a mano con piedras y alambre dorado"],
+        ["Presentación", "Caja de regalo con moño"],
+        ["Rellenable", "Sí — trae tu vaso y elige el aroma"],
+        ["Acabado", "Hecha a mano con amor"]
+      ],
+      ideal: "Regalo premium, decoración de interiores, aromaterapia o detalle especial. Rellenable con el aroma de tu elección.",
+      portada: "img/santal-portada.svg",
+      fotos: [
+        { src: "img/santal-portada.svg", alt: "Vela Santal 33 en caja de regalo con moño" },
+        { src: "img/santal-vaso.svg", alt: "Vaso artesanal de vidrio soplado con piedras de colores" },
+        { src: "img/santal-etiqueta.svg", alt: "Vista superior de la vela Santal 33 con etiqueta VELARE" }
+      ]
+    },
+    {
+      id: "citronela",
+      nombre: "Citronela",
+      subtitulo: "Vela aromática anti-mosquitos",
+      precio: 150,
+      corta: "Vela aromática de citronela con cubos de cera turquesa en vaso de cristal.",
+      descripcion: "Una vela aromática con esencia de citronela — el repelente natural por excelencia. Los cubos de cera turquesa sobre una base de cera blanca le dan un look fresco y moderno que decora mientras protege tu espacio de mosquitos. Perfecta para terrazas, jardines, cenas al aire libre o cualquier rincón donde quieras disfrutar sin zancudos. El vaso de cristal redondo es elegante y compacto. Y como todas nuestras aromáticas, es rellenable: cuando se termina, trae tu vaso y lo rellenamos con citronela o el aroma que prefieras a un precio muy accesible.",
+      detalles: [
+        ["Aroma", "Citronela (repelente natural de mosquitos)"],
+        ["Vaso", "Cristal redondo transparente"],
+        ["Diseño", "Cubos de cera turquesa sobre base blanca"],
+        ["Rellenable", "Sí — trae tu vaso y elige el aroma"],
+        ["Acabado", "Hecha a mano con amor"]
+      ],
+      ideal: "Terraza, jardín, cena al aire libre, camping o cualquier espacio donde quieras alejar mosquitos con estilo. Rellenable.",
+      portada: "img/citronela-portada.svg",
+      fotos: [
+        { src: "img/citronela-portada.svg", alt: "Vela de citronela con cubos turquesa, vista frontal" },
+        { src: "img/citronela-arriba.svg", alt: "Vela de citronela vista desde arriba" }
+      ]
     }
   ]
 };
