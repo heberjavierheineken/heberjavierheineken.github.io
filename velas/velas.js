@@ -7,6 +7,7 @@ window.CATALOGO = {
   velas: [
     {
       id: "ramo-de-rosas",
+      categoria: "floral", // navidad | aromaticas | floral | recuerdos
       nombre: "Ramo de Rosas",
       subtitulo: "Flor en vaso de cristal",
       precio: 150,
@@ -28,6 +29,7 @@ window.CATALOGO = {
     },
     {
       id: "peonias-y-flores-secas",
+      categoria: "floral", // navidad | aromaticas | floral | recuerdos
       nombre: "Peonías y Flores Secas",
       subtitulo: "Arreglo en maceta blanca",
       precio: 80,
@@ -47,6 +49,7 @@ window.CATALOGO = {
     },
     {
       id: "peonia-rosa",
+      categoria: "floral", // navidad | aromaticas | floral | recuerdos
       nombre: "Peonía Rosa",
       subtitulo: "En maceta acanalada",
       precio: 40,
@@ -66,6 +69,7 @@ window.CATALOGO = {
     },
     {
       id: "jardin-de-suculentas",
+      categoria: "floral", // navidad | aromaticas | floral | recuerdos
       nombre: "Jardín de Suculentas",
       subtitulo: "En maceta acanalada",
       precio: 40,
@@ -85,6 +89,7 @@ window.CATALOGO = {
     },
     {
       id: "cruz-floral",
+      categoria: "floral", // navidad | aromaticas | floral | recuerdos
       nombre: "Cruz Floral",
       subtitulo: "Cruz blanca con flores",
       precio: 30,
@@ -104,6 +109,7 @@ window.CATALOGO = {
     },
     {
       id: "pinos-de-navidad",
+      categoria: "navidad", // navidad | aromaticas | floral | recuerdos
       nombre: "Pinos de Navidad",
       subtitulo: "Arbolitos en tres tamaños",
       precio: 35,
@@ -124,6 +130,7 @@ window.CATALOGO = {
     },
     {
       id: "pino-con-cascabel",
+      categoria: "navidad", // navidad | aromaticas | floral | recuerdos
       nombre: "Pino con Cascabel",
       subtitulo: "Arbolito plano con estrella dorada",
       precio: 30,
@@ -143,6 +150,7 @@ window.CATALOGO = {
     },
     {
       id: "reno-navideno",
+      categoria: "navidad", // navidad | aromaticas | floral | recuerdos
       nombre: "Reno Navideño",
       subtitulo: "Con moño y cascabel",
       precio: 37,
@@ -162,6 +170,7 @@ window.CATALOGO = {
     },
     {
       id: "tabletas-aromaticas",
+      categoria: "aromaticas", // navidad | aromaticas | floral | recuerdos
       nombre: "Tabletas Aromáticas",
       subtitulo: "Flores de lavanda en cera",
       precio: 20,
@@ -181,6 +190,7 @@ window.CATALOGO = {
     },
     {
       id: "figuras-navidenas",
+      categoria: "navidad", // navidad | aromaticas | floral | recuerdos
       nombre: "Figuras Navideñas",
       subtitulo: "Set de 3 piezas con charola",
       precio: 190,
@@ -200,6 +210,7 @@ window.CATALOGO = {
     },
     {
       id: "cubo-corazon",
+      categoria: "navidad", // navidad | aromaticas | floral | recuerdos
       nombre: "Cubo Corazón",
       subtitulo: "Con brillos dorados y cascabel",
       precio: 80,
@@ -219,6 +230,7 @@ window.CATALOGO = {
     },
     {
       id: "copos-de-nieve",
+      categoria: "navidad", // navidad | aromaticas | floral | recuerdos
       nombre: "Copos de Nieve",
       subtitulo: "Con hojuela de oro",
       precio: 28,
@@ -238,6 +250,7 @@ window.CATALOGO = {
     },
     {
       id: "caja-regalo-navidad",
+      categoria: "navidad", // navidad | aromaticas | floral | recuerdos
       nombre: "Caja Regalo Navideña",
       subtitulo: "3 velas en caja kraft con ventana",
       precio: 100,
@@ -257,6 +270,7 @@ window.CATALOGO = {
     },
     {
       id: "bosque-navideno",
+      categoria: "navidad", // navidad | aromaticas | floral | recuerdos
       nombre: "Bosque Navideño",
       subtitulo: "Set completo con charola y piedritas",
       precio: 210,
@@ -276,6 +290,7 @@ window.CATALOGO = {
     },
     {
       id: "lumiere-vainilla",
+      categoria: "aromaticas", // navidad | aromaticas | floral | recuerdos
       nombre: "Lumière Vainilla",
       subtitulo: "Vela aromática en vaso ahumado",
       precio: 230,
@@ -297,6 +312,7 @@ window.CATALOGO = {
     },
     {
       id: "santal-33",
+      categoria: "aromaticas", // navidad | aromaticas | floral | recuerdos
       nombre: "Santal 33",
       subtitulo: "Vela aromática en vaso artesanal",
       precio: 250,
@@ -319,6 +335,7 @@ window.CATALOGO = {
     },
     {
       id: "citronela",
+      categoria: "aromaticas", // navidad | aromaticas | floral | recuerdos
       nombre: "Citronela",
       subtitulo: "Vela aromática anti-mosquitos",
       precio: 150,
@@ -340,6 +357,7 @@ window.CATALOGO = {
     },
     {
       id: "orquidea",
+      categoria: "aromaticas", // navidad | aromaticas | floral | recuerdos
       nombre: "Orquídea",
       subtitulo: "Vela aromática en vaso artesanal",
       precio: 250,
@@ -363,6 +381,7 @@ window.CATALOGO = {
     },
     {
       id: "fresas",
+      categoria: "aromaticas", // navidad | aromaticas | floral | recuerdos
       nombre: "Fresas",
       subtitulo: "Vela aromática con fresas de cera",
       precio: 150,
@@ -385,6 +404,7 @@ window.CATALOGO = {
     },
     {
       id: "angel",
+      categoria: "recuerdos", // navidad | aromaticas | floral | recuerdos
       nombre: "Ángel",
       subtitulo: "Recuerdo para ocasiones especiales",
       precio: 30,
@@ -406,6 +426,7 @@ window.CATALOGO = {
     },
     {
       id: "centro-mesa-tematico",
+      categoria: "recuerdos", // navidad | aromaticas | floral | recuerdos
       nombre: "Centro de Mesa Temático",
       subtitulo: "Velas temáticas para fiestas infantiles",
       precio: 160,

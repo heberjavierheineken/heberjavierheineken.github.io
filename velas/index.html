@@ -43,15 +43,18 @@ img{max-width:100%;display:block}
 @media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:960px){.grid{grid-template-columns:repeat(3,1fr)}}
 .card{background:var(--card);border-radius:22px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;box-shadow:0 14px 30px -22px rgba(31,68,36,.55);transition:transform .2s}
-.card:active{transform:scale(.985)}
 .card:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
 .card .ph{aspect-ratio:4/5;background:var(--leaf)}
 .card .ph img{width:100%;height:100%;object-fit:contain;object-position:center;background:var(--card)}
+.card-link{display:flex;flex-direction:column;text-decoration:none;color:inherit;flex:1}
 .card .tx{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px}
 .card h2{font-family:var(--script);font-weight:400;font-size:42px;line-height:1.05;margin:0;color:var(--green)}
 .card p{margin:0;color:var(--muted);font-size:15px}
 .row{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
 .price{font-family:var(--display);font-size:30px;color:var(--ink)}
+.acts{display:flex;gap:8px;padding:0 18px 18px}
+.acts a{flex:1;text-align:center;justify-content:center;padding:11px 14px;font-size:15px}
+.cats-back{display:inline-flex;align-items:center;gap:6px;color:var(--on);text-decoration:none;font-size:14px;font-weight:600;background:rgba(255,255,255,.14);padding:7px 14px 7px 10px;border-radius:999px;margin-bottom:18px}
 .more{font-size:14px;font-weight:600;color:var(--green);display:flex;align-items:center;gap:6px}
 
 /* Detalle */
@@ -95,10 +98,11 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding-bottom:calc(2
 
 <div id="lista">
   <header class="top pad"><div class="wrap">
+    <a class="cats-back" href="categorias.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>Categorías</a>
     <h1 id="marca"></h1>
     <div class="star" aria-hidden="true"><i></i>✦<i></i></div>
     <div class="eyebrow" id="lema"></div>
-    <p style="margin-top:10px">Toca una vela para ver sus fotos, detalles y precio.</p>
+    <p style="margin-top:10px" id="intro">Toca una vela para ver sus fotos, detalles y precio.</p>
   </div></header>
   <main class="pad"><div class="wrap">
     <div class="count" id="count"></div>
@@ -124,7 +128,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding-bottom:calc(2
     <div class="price" id="dPrecio"></div>
     <div style="display:flex;gap:8px">
       <button class="btn alt" id="share" type="button">Compartir</button>
-      <a class="btn" id="wa" target="_blank" rel="noopener" hidden>Pedir por WhatsApp</a>
+      <a class="btn" id="wa" target="_blank" rel="noopener" hidden>Comprar</a>
     </div>
   </div></div>
 </div>
@@ -137,18 +141,24 @@ const money = n => "$" + Number(n).toLocaleString("es-MX");
 document.title = C.marca + " · Catálogo";
 $("marca").textContent = C.marca; $("lema").textContent = C.lema;
 if(C.instagram){ $("ig").textContent = "Instagram @" + C.instagram; $("ig").href = "https://instagram.com/" + C.instagram; } else $("ig").hidden = true;
-$("count").textContent = C.velas.length + (C.velas.length === 1 ? " modelo disponible" : " modelos disponibles");
+const CATS = {navidad:"🎄 Colección Navideña", aromaticas:"✨ Aromáticas Premium", floral:"🌸 Colección Floral", recuerdos:"🎁 Recuerdos y Detalles"};
+const cat = new URLSearchParams(location.search).get("cat");
+const lista = CATS[cat] ? C.velas.filter(v => v.categoria === cat) : C.velas;
+if(CATS[cat]) $("lema").textContent = CATS[cat];
+$("count").textContent = lista.length + (lista.length === 1 ? " modelo disponible" : " modelos disponibles");
+const waLink = v => "https://wa.me/" + C.whatsapp + "?text=" + encodeURIComponent("Hola, quiero comprar la vela " + v.nombre + " (" + money(v.precio) + "). " + location.origin + location.pathname + "#" + v.id);
 
-$("grid").innerHTML = C.velas.map(v => `
-  <a class="card" href="#${v.id}">
+$("grid").innerHTML = lista.map(v => `
+  <div class="card"><a class="card-link" href="#${v.id}">
     <div class="ph"><img src="${v.portada}" alt="${v.nombre}" loading="lazy"></div>
     <div class="tx">
       <h2>${v.nombre}</h2>
       <p>${v.corta}</p>
       <div class="row"><span class="price">${money(v.precio)}</span>
         <span class="more">Ver detalles <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></span></div>
-    </div>
-  </a>`).join("");
+    </div></a>
+    ${C.whatsapp ? `<div class="acts"><a class="btn" href="${waLink(v)}" target="_blank" rel="noopener">Comprar</a></div>` : ""}
+  </div>`).join("");
 
 let listScroll = 0, fromList = false;
 function show(){
@@ -166,7 +176,7 @@ function show(){
   $("dots").innerHTML = v.fotos.length > 1 ? v.fotos.map((_,i) => `<button type="button" aria-label="Foto ${i+1}" aria-current="${i===0}"></button>`).join("") : "";
   [...$("dots").children].forEach((b,i) => b.onclick = () => $("slides").scrollTo({left:i*$("slides").clientWidth,behavior:"smooth"}));
   const wa = $("wa");
-  if(C.whatsapp){ wa.hidden = false; wa.href = "https://wa.me/" + C.whatsapp + "?text=" + encodeURIComponent("Hola, me interesa la vela " + v.nombre + " (" + money(v.precio) + "). " + location.href); }
+  if(C.whatsapp){ wa.hidden = false; wa.href = waLink(v); }
   else wa.hidden = true;
 }
 $("slides").addEventListener("scroll", () => {
