@@ -273,6 +273,27 @@ window.CATALOGO = {
       fotos: [
         { src: "img/set-bosque-foto.svg", alt: "Bosque navideño con pinos, reno y charola de concreto" }
       ]
+    },
+    {
+      id: "lumiere-vainilla",
+      nombre: "Lumière Vainilla",
+      subtitulo: "Vela aromática en vaso ahumado",
+      precio: 230,
+      corta: "Vela aromática de vainilla en elegante vaso de vidrio ahumado.",
+      descripcion: "La línea Lumière es la experiencia premium de VELARE. Una vela aromática con esencia natural de vainilla, vertida a mano en un sofisticado vaso de vidrio ahumado con acabado artesanal. Al encenderla, la vainilla envuelve tu espacio con un aroma cálido y reconfortante que invita a la calma. El vaso ahumado filtra la luz de la llama creando un ambiente íntimo y acogedor. Una vez consumida, el vaso se reutiliza como porta-objetos o pieza decorativa.",
+      detalles: [
+        ["Aroma", "Vainilla natural"],
+        ["Vaso", "Vidrio ahumado artesanal"],
+        ["Línea", "Lumière — premium VELARE"],
+        ["Mecha", "Algodón trenzado"],
+        ["Acabado", "Hecha a mano con amor"]
+      ],
+      ideal: "Relajación, aromaterapia, cena romántica, regalo especial o decoración de interiores.",
+      portada: "img/lumiere-vainilla-portada.svg",
+      fotos: [
+        { src: "img/lumiere-vainilla-portada.svg", alt: "Vela Lumière vainilla en vaso ahumado, vista lateral" },
+        { src: "img/lumiere-vainilla-etiqueta.svg", alt: "Vela Lumière vainilla, detalle de etiqueta VELARE" }
+      ]
     }
   ]
 };
