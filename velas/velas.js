@@ -389,8 +389,9 @@ window.CATALOGO = {
       subtitulo: "Recuerdo para ocasiones especiales",
       precio: 30,
       corta: "Ángel de cera con corazón y alas, perfecto como recuerdo para bautizos, primeras comuniones y más.",
-      descripcion: "Un ángel de cera blanca con alas extendidas y un corazón en el pecho, moldeado a mano con un acabado suave y delicado. Viene sobre una base redonda de cera que lo sostiene con firmeza. Es el recuerdo ideal para bautizos, primeras comuniones, confirmaciones, presentaciones, baby showers o cualquier celebración especial. Su tamaño compacto lo hace perfecto como detalle de mesa o para entregar a cada invitado. Disponible en blanco y en el color que prefieras — solo dinos cuál al hacer tu pedido. Para pedidos de mayoreo, pregunta por precio especial.",
+      descripcion: "Un ángel de cera blanca con alas extendidas y un corazón en el pecho, moldeado a mano con un acabado suave y delicado. Viene sobre una base redonda de cera que lo sostiene con firmeza. Disponible en dos tamaños para que elijas el que mejor se adapte a tu evento. Es el recuerdo ideal para bautizos, primeras comuniones, confirmaciones, presentaciones, baby showers o cualquier celebración especial. Perfecto como detalle de mesa o para entregar a cada invitado. Disponible en blanco y en el color que prefieras — solo dinos cuál al hacer tu pedido. Para pedidos de mayoreo, pregunta por precio especial.",
       detalles: [
+        ["Tamaños", "Dos tamaños disponibles"],
         ["Color", "Blanco (disponible en el color que desees)"],
         ["Diseño", "Ángel con alas y corazón"],
         ["Base", "Base redonda de cera incluida"],
