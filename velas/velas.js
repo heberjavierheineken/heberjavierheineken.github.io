@@ -403,6 +403,26 @@ window.CATALOGO = {
       fotos: [
         { src: "img/angel-portada.svg", alt: "Ángel de cera blanca con corazón y alas" }
       ]
+    },
+    {
+      id: "centro-mesa-tematico",
+      nombre: "Centro de Mesa Temático",
+      subtitulo: "Velas temáticas para fiestas infantiles",
+      precio: 160,
+      corta: "Centro de mesa con velas temáticas en maceta decorada, personalizable con el tema de tu fiesta.",
+      descripcion: "Un centro de mesa completo con velas temáticas hechas a mano, montadas en una maceta blanca con papel de china en los colores del personaje y un topper personalizado con el nombre y la edad del festejado. Las velas tienen la forma del personaje elegido — Mickey, Minnie, princesas, superhéroes, dinosaurios o el tema que quieras. Cada centro de mesa se arma con los colores y detalles de tu fiesta para que combine perfecto con tu decoración. Ideal para las mesas de invitados, la mesa de regalos o como recuerdo especial. Pregunta por precio en paquete para varias mesas.",
+      detalles: [
+        ["Tema", "Mickey Mouse y cualquier personaje o tema que desees"],
+        ["Incluye", "Maceta, velas temáticas, papel de china y topper personalizado"],
+        ["Personalización", "Nombre, edad, colores y tema a tu elección"],
+        ["Paquete", "Precio especial en pedidos de varias piezas"],
+        ["Acabado", "Hecho a mano con amor"]
+      ],
+      ideal: "Cumpleaños infantil, baby shower, bautizo temático o cualquier fiesta con tema. Personalizable al 100%.",
+      portada: "img/mickey-portada.svg",
+      fotos: [
+        { src: "img/mickey-portada.svg", alt: "Centro de mesa temático de Mickey Mouse con velas y topper personalizado" }
+      ]
     }
   ]
 };
