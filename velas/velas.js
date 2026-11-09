@@ -337,6 +337,51 @@ window.CATALOGO = {
         { src: "img/citronela-portada.svg", alt: "Vela de citronela con cubos turquesa, vista frontal" },
         { src: "img/citronela-arriba.svg", alt: "Vela de citronela vista desde arriba" }
       ]
+    },
+    {
+      id: "orquidea",
+      nombre: "Orquídea",
+      subtitulo: "Vela aromática en vaso artesanal",
+      precio: 250,
+      corta: "Vela aromática con esencia de orquídea en vaso de vidrio soplado con vetas blancas.",
+      descripcion: "Una vela aromática con esencia de orquídea, vertida a mano en un hermoso vaso de vidrio soplado con vetas blancas y tonos dorados que lo hacen único — no hay dos iguales. Al encenderla, la delicada fragancia floral de la orquídea transforma tu espacio en un refugio de elegancia y calma. Viene en caja transparente con moño de yute, lista para regalar. Y como todas nuestras aromáticas, es rellenable: cuando se termina, trae tu vaso y lo rellenamos con el aroma que prefieras a un precio muy accesible.",
+      detalles: [
+        ["Aroma", "Orquídea (disponible en más aromas al rellenar)"],
+        ["Vaso", "Vidrio soplado a mano con vetas blancas y doradas"],
+        ["Mechas", "Doble mecha para mayor difusión del aroma"],
+        ["Presentación", "Caja transparente con moño de yute"],
+        ["Rellenable", "Sí — trae tu vaso y elige el aroma"],
+        ["Acabado", "Hecha a mano con amor"]
+      ],
+      ideal: "Regalo premium, decoración de interiores, aromaterapia o detalle especial. Rellenable con el aroma de tu elección.",
+      portada: "img/orquidea-portada.svg",
+      fotos: [
+        { src: "img/orquidea-portada.svg", alt: "Vela de orquídea en caja de regalo con moño de yute" },
+        { src: "img/orquidea-arriba.svg", alt: "Vista superior de la vela de orquídea con doble mecha" },
+        { src: "img/orquidea-vaso.svg", alt: "Vaso artesanal de vidrio soplado con vetas blancas" }
+      ]
+    },
+    {
+      id: "fresas",
+      nombre: "Fresas",
+      subtitulo: "Vela aromática con fresas de cera",
+      precio: 150,
+      corta: "Vela aromática con olor a fresas y fresas de cera decorativas en vaso de cristal.",
+      descripcion: "Una vela aromática con esencia de fresas frescas, coronada con fresas y frambuesas de cera hechas a mano que se ven tan reales que dan ganas de morderlas. El aroma dulce y frutal llena tu espacio con una energía fresca y alegre. Viene en vaso de cristal cuadrado dentro de su caja transparente con moño de yute, lista para sorprender. Y es rellenable: cuando se termina, trae tu vaso y lo rellenamos con fresas o el aroma que prefieras a un precio muy accesible.",
+      detalles: [
+        ["Aroma", "Fresas frescas (disponible en más aromas al rellenar)"],
+        ["Vaso", "Cristal cuadrado transparente"],
+        ["Decoración", "Fresas y frambuesas de cera hechas a mano"],
+        ["Presentación", "Caja transparente con moño de yute"],
+        ["Rellenable", "Sí — trae tu vaso y elige el aroma"],
+        ["Acabado", "Hecha a mano con amor"]
+      ],
+      ideal: "Regalo original, decoración de cocina o sala, detalle para amigas o cualquier ocasión especial. Rellenable.",
+      portada: "img/fresas-portada.svg",
+      fotos: [
+        { src: "img/fresas-portada.svg", alt: "Vela de fresas en caja de regalo con moño de yute" },
+        { src: "img/fresas-arriba.svg", alt: "Vista superior de la vela con fresas de cera decorativas" }
+      ]
     }
   ]
 };
