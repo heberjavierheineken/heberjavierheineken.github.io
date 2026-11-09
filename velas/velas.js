@@ -382,6 +382,26 @@ window.CATALOGO = {
         { src: "img/fresas-portada.svg", alt: "Vela de fresas en caja de regalo con moño de yute" },
         { src: "img/fresas-arriba.svg", alt: "Vista superior de la vela con fresas de cera decorativas" }
       ]
+    },
+    {
+      id: "angel",
+      nombre: "Ángel",
+      subtitulo: "Recuerdo para ocasiones especiales",
+      precio: 30,
+      corta: "Ángel de cera con corazón y alas, perfecto como recuerdo para bautizos, primeras comuniones y más.",
+      descripcion: "Un ángel de cera blanca con alas extendidas y un corazón en el pecho, moldeado a mano con un acabado suave y delicado. Viene sobre una base redonda de cera que lo sostiene con firmeza. Es el recuerdo ideal para bautizos, primeras comuniones, confirmaciones, presentaciones, baby showers o cualquier celebración especial. Su tamaño compacto lo hace perfecto como detalle de mesa o para entregar a cada invitado. Disponible en blanco y en el color que prefieras — solo dinos cuál al hacer tu pedido. Para pedidos de mayoreo, pregunta por precio especial.",
+      detalles: [
+        ["Color", "Blanco (disponible en el color que desees)"],
+        ["Diseño", "Ángel con alas y corazón"],
+        ["Base", "Base redonda de cera incluida"],
+        ["Acabado", "Moldeado a mano, acabado suave"],
+        ["Mayoreo", "Precio especial en pedidos grandes"]
+      ],
+      ideal: "Bautizo, primera comunión, confirmación, presentación, baby shower, XV años o cualquier celebración religiosa o familiar.",
+      portada: "img/angel-portada.svg",
+      fotos: [
+        { src: "img/angel-portada.svg", alt: "Ángel de cera blanca con corazón y alas" }
+      ]
     }
   ]
 };
