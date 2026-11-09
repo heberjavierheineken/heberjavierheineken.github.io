@@ -124,6 +124,7 @@ window.CATALOGO = {
       ideal: "Centro de mesa navideño, regalo de intercambio o decoración de temporada.",
       portada: "img/pinos-navidad-portada.svg",
       fotos: [
+        { src: "img/pinos-de-navidad-ficha.jpg", alt: "Ficha de la vela Pinos de Navidad" },
         { src: "img/pinos-navidad-portada.svg", alt: "Tres arbolitos de Navidad de cera en verde y blanco" },
         { src: "img/pinos-navidad-coleccion.svg", alt: "Colección completa de pinos navideños en distintos tamaños" }
       ]
@@ -145,6 +146,7 @@ window.CATALOGO = {
       ideal: "Centro de mesa, chimenea, recuerdo navideño o regalo de intercambio.",
       portada: "img/pino-navidad-foto.svg",
       fotos: [
+        { src: "img/pino-con-cascabel-ficha.jpg", alt: "Ficha de la vela Pino con Cascabel" },
         { src: "img/pino-navidad-foto.svg", alt: "Arbolito de Navidad en cera blanca con cascabel dorado" }
       ]
     },
@@ -165,6 +167,7 @@ window.CATALOGO = {
       ideal: "Decoración navideña, regalo de intercambio o complemento del nacimiento.",
       portada: "img/reno-navidad-foto.svg",
       fotos: [
+        { src: "img/reno-navideno-ficha.jpg", alt: "Ficha de la vela Reno Navideño" },
         { src: "img/reno-navidad-foto.svg", alt: "Reno de cera blanca con moño rojo y cascabel dorado" }
       ]
     },
@@ -185,6 +188,7 @@ window.CATALOGO = {
       ideal: "Detalle para despedidas, recuerdo para evento, regalo económico o para perfumar tu ropa.",
       portada: "img/tabletas-aromaticas-foto.svg",
       fotos: [
+        { src: "img/tabletas-aromaticas-ficha.jpg", alt: "Ficha de la vela Tabletas Aromáticas" },
         { src: "img/tabletas-aromaticas-foto.svg", alt: "Par de tabletas aromáticas de lavanda con etiqueta VELARE" }
       ]
     },
@@ -205,6 +209,7 @@ window.CATALOGO = {
       ideal: "Centro de mesa navideño, regalo premium, decoración de sala o chimenea.",
       portada: "img/figuras-navidad-foto.svg",
       fotos: [
+        { src: "img/figuras-navidenas-ficha.jpg", alt: "Ficha de la vela Figuras Navideñas" },
         { src: "img/figuras-navidad-foto.svg", alt: "Set de figuras navideñas con charola de concreto" }
       ]
     },
@@ -225,6 +230,7 @@ window.CATALOGO = {
       ideal: "Centro de mesa, regalo de intercambio, decoración moderna navideña.",
       portada: "img/cuadros-corazon-foto.svg",
       fotos: [
+        { src: "img/cubo-corazon-ficha.jpg", alt: "Ficha de la vela Cubo Corazón" },
         { src: "img/cuadros-corazon-foto.svg", alt: "Par de velas cubo corazón con glitter dorado" }
       ]
     },
@@ -245,6 +251,7 @@ window.CATALOGO = {
       ideal: "Detalle para posada, recuerdo navideño, intercambio o centro de mesa.",
       portada: "img/copos-navidad-foto.svg",
       fotos: [
+        { src: "img/copos-de-nieve-ficha.jpg", alt: "Ficha de la vela Copos de Nieve" },
         { src: "img/copos-navidad-foto.svg", alt: "Tres velas de copo de nieve con hojuela de oro" }
       ]
     },
@@ -265,6 +272,7 @@ window.CATALOGO = {
       ideal: "Intercambio navideño, regalo para anfitriona, detalle corporativo o para quien tiene todo.",
       portada: "img/caja-navidad-foto.svg",
       fotos: [
+        { src: "img/caja-regalo-navidad-ficha.jpg", alt: "Ficha de la vela Caja Regalo Navideña" },
         { src: "img/caja-navidad-foto.svg", alt: "Caja kraft con tres velas navideñas y decoración de pino" }
       ]
     },
@@ -285,6 +293,7 @@ window.CATALOGO = {
       ideal: "Centro de mesa navideño, decoración de sala, regalo premium o pieza para chimenea.",
       portada: "img/set-bosque-foto.svg",
       fotos: [
+        { src: "img/bosque-navideno-ficha.jpg", alt: "Ficha de la vela Bosque Navideño" },
         { src: "img/set-bosque-foto.svg", alt: "Bosque navideño con pinos, reno y charola de concreto" }
       ]
     },
@@ -306,6 +315,7 @@ window.CATALOGO = {
       ideal: "Relajación, aromaterapia, cena romántica, regalo especial o decoración de interiores. Rellenable con el aroma de tu elección.",
       portada: "img/lumiere-vainilla-portada.svg",
       fotos: [
+        { src: "img/lumiere-vainilla-ficha.jpg", alt: "Ficha de la vela Lumière Vainilla" },
         { src: "img/lumiere-vainilla-portada.svg", alt: "Vela Lumière vainilla en vaso ahumado, vista lateral" },
         { src: "img/lumiere-vainilla-etiqueta.svg", alt: "Vela Lumière vainilla, detalle de etiqueta VELARE" }
       ]
@@ -328,6 +338,7 @@ window.CATALOGO = {
       ideal: "Regalo premium, decoración de interiores, aromaterapia o detalle especial. Rellenable con el aroma de tu elección.",
       portada: "img/santal-portada.svg",
       fotos: [
+        { src: "img/santal-33-ficha.jpg", alt: "Ficha de la vela Santal 33" },
         { src: "img/santal-portada.svg", alt: "Vela Santal 33 en caja de regalo con moño" },
         { src: "img/santal-vaso.svg", alt: "Vaso artesanal de vidrio soplado con piedras de colores" },
         { src: "img/santal-etiqueta.svg", alt: "Vista superior de la vela Santal 33 con etiqueta VELARE" }
@@ -351,6 +362,7 @@ window.CATALOGO = {
       ideal: "Terraza, jardín, cena al aire libre, camping o cualquier espacio donde quieras alejar mosquitos con estilo. Rellenable.",
       portada: "img/citronela-portada.svg",
       fotos: [
+        { src: "img/citronela-ficha.jpg", alt: "Ficha de la vela Citronela" },
         { src: "img/citronela-portada.svg", alt: "Vela de citronela con cubos turquesa, vista frontal" },
         { src: "img/citronela-arriba.svg", alt: "Vela de citronela vista desde arriba" }
       ]
@@ -374,6 +386,7 @@ window.CATALOGO = {
       ideal: "Regalo premium, decoración de interiores, aromaterapia o detalle especial. Rellenable con el aroma de tu elección.",
       portada: "img/orquidea-portada.svg",
       fotos: [
+        { src: "img/orquidea-ficha.jpg", alt: "Ficha de la vela Orquídea" },
         { src: "img/orquidea-portada.svg", alt: "Vela de orquídea en caja de regalo con moño de yute" },
         { src: "img/orquidea-arriba.svg", alt: "Vista superior de la vela de orquídea con doble mecha" },
         { src: "img/orquidea-vaso.svg", alt: "Vaso artesanal de vidrio soplado con vetas blancas" }
@@ -398,6 +411,7 @@ window.CATALOGO = {
       ideal: "Regalo original, decoración de cocina o sala, detalle para amigas o cualquier ocasión especial. Rellenable.",
       portada: "img/fresas-portada.svg",
       fotos: [
+        { src: "img/fresas-ficha.jpg", alt: "Ficha de la vela Fresas" },
         { src: "img/fresas-portada.svg", alt: "Vela de fresas en caja de regalo con moño de yute" },
         { src: "img/fresas-arriba.svg", alt: "Vista superior de la vela con fresas de cera decorativas" }
       ]
@@ -421,6 +435,7 @@ window.CATALOGO = {
       ideal: "Bautizo, primera comunión, confirmación, presentación, baby shower, XV años o cualquier celebración religiosa o familiar.",
       portada: "img/angel-portada.svg",
       fotos: [
+        { src: "img/angel-ficha.jpg", alt: "Ficha de la vela Ángel" },
         { src: "img/angel-portada.svg", alt: "Ángel de cera blanca con corazón y alas" }
       ]
     },
@@ -442,6 +457,7 @@ window.CATALOGO = {
       ideal: "Cumpleaños infantil, baby shower, bautizo temático o cualquier fiesta con tema. Personalizable al 100%.",
       portada: "img/mickey-portada.svg",
       fotos: [
+        { src: "img/centro-mesa-tematico-ficha.jpg", alt: "Ficha de la vela Centro de Mesa Temático" },
         { src: "img/mickey-portada.svg", alt: "Centro de mesa temático de Mickey Mouse con velas y topper personalizado" }
       ]
     }
